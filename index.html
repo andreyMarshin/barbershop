@@ -20,10 +20,10 @@
                 <div class="container">
                     <ul class="site-navigation">
                        <li>
-                           <a href="info.html">Информация</a>
+                           <a href="#">Информация</a>
                        </li>
                        <li>
-                           <a href="news.html">Новости</a>
+                           <a href="#">Новости</a>
                        </li>
                        <li>
                            <a href="price.html">Прайс-лист</a>
@@ -36,7 +36,7 @@
                        </li>
                     </ul>
                     <ul class="user-navigation">
-                        <li class="login-link">
+                        <li>
                             <a class="login-link" href="login.html">Вход</a>
                         </li>
                     </ul>
@@ -44,10 +44,9 @@
             </div>
         </nav>
     </header>
+
     <main class="container">
-
         <h1 class="visually-hidden">Барбершоп «Бородинский»</h1>
-
         <section class="features">
             <h2 class="visually-hidden">Преимущества</h2>
             <ul class="features-list">
@@ -138,13 +137,12 @@
                 <button class="button" type="submit">Отправить</button>
             </form>
         </section>
-    </div>
-    
+    </div>    
     </main>
 
     <footer class="main-footer">
         <div class="container">
-             <p class="footer-contacts">
+            <p class="footer-contacts">
                  Барбершоп "Бородинский" <br>
                  Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19 <br>
                  <a href="map.html">Как нас найти?</a> <br>
@@ -168,8 +166,10 @@
                               <span class="visually-hidden">Фейсбук</span>
                               <svg xmlns="http://www.w3.org/2000/svg" width="19" height="22" viewBox="0 0 10.15 21.74">
                                   <path d="M3.34 1.12A4.77 4.77 0 0 1 6.53 0h3.61v3.81H7.81a1.07 1.07 0 0 0-1.09.83v2.55h3.42c-.08 1.23-.24 2.45-.41 3.67h-3v10.87H2.21V10.86H0V7.21h2.19V3.66a3.83 3.83 0 0 1 1.15-2.54z"
-                                      fill="#fff" />
-                              </a>
+                                      fill="#fff">
+                                  </path>
+                                </svg>
+                           </a>
                       </li>
                       <li>
                           <a class="social-button" href="#">
@@ -181,14 +181,46 @@
                               </svg>
                           </a>
                       </li>
-                  </ul>
+                </ul>
             </div>
             <p class="footer-copyright">
                  <b>Разработано:</b>
-                 <a href="#" class="button">test</a>
+                 <a href="#" class="button"></a>
             </p>
         </div>
-      </footer>
+    </footer>
   
-  </body>
-  </html>
+    <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+        <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+                <label class="visually-hidden" for="user-login">Логин</label>
+                <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+            </p>
+            <p>
+                <label class="visually-hidden" for="user-password">Пароль</label>
+                <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+            </p>
+            <p class="login-help">
+                <label class="login-checkbox">
+                    <input type="checkbox" name="remember" class="visually-hidden">
+                    <span class="checkbox-indicator"></span>
+                    Запомните меня
+                </label>
+                <a class="restore" href="#">Я забыл пароль!</a>
+            </p>
+            <button class="button" type="submit">Войти</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+
+    <section class="modal modal-map">
+        <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+            <img src="img/map.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+    </section>
+</body>
+</html> 
